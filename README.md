@@ -33,7 +33,8 @@ AI 생성 이미지와 실제 이미지 데이터셋을 이용하여 ResNet50 �
 
 ## METHODOLOGY
     Explaining your choice of algorithms (methods)
-ResNet50 
+ResNet50
+
 ResNet은 2014년에 나왔음에도 불구하고 현재까지도 대표적인 CNN구조로 꼽히고 있다. 먼저 ResNet의 가장 기초적인 구조는 Residual Block이다. ResNet은 블록 단위로 층을 쌓는데 그 구조는 아래와 같다.
 ![ResNet50-1](https://github.com/KangGyeongHo/HYU_AI-X-_DL_G03/assets/168617928/6bd2b889-8a95-4664-bd09-9eabf84cc095)
 Conv 층을 통과한 F(X) 과 Conv 층을 통과하지 않은 X를 더하는 과정을 Residual Mapping이라고 한다. 위 Residual Block이 여러 개 쌓여서 나온 CNN 모델을 Residual Network(ResNet)이라고 부른다. 모델명에 붙은 숫자는 층의 개수를 의미한다. 즉, ResNet18은 18개의 층이 있다는 소리이고 ResNet50은 50개의 층이 있다는 의미이다. 다른 CNN 종류인 AlexNet이나 GoogLeNet이 가지고 있는 문제점은 바로 층이 깊어짐에 따라 발생하는 과적합과 기울기 소멸 문제이다. 연산 중에 의미 없는 파라미터의 수가 발생하면 연쇄적으로 다음 층에 영향을 미치기 때문에 이를 해결할 방법을 강구해야만 했다. ResNet은 잔차 연결(Skip Connection)을 사용하는 Residual Block을 제안하면서 층이 깊어짐에 따른 과적합이나 기울기 소멸 문제를 해결해버렸다.
