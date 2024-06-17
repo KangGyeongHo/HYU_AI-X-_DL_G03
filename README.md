@@ -1,6 +1,6 @@
 # HYU_AI-X_DL_G03
 # TITLE
-## AI 이미지/영상 판별 (임시)
+## AI 생성 이미지 분류 모델
 [깃허브 서식 쓰는 법](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 ## 목차
 - [MEMBERS](#MEMBERS)
