@@ -36,10 +36,14 @@ AI 생성 이미지와 실제 이미지 데이터셋을 이용하여 ResNet50 �
 ResNet50
 
 ResNet은 2014년에 나왔음에도 불구하고 현재까지도 대표적인 CNN구조로 꼽히고 있다. 먼저 ResNet의 가장 기초적인 구조는 Residual Block이다. ResNet은 블록 단위로 층을 쌓는데 그 구조는 아래와 같다.
+
 ![ResNet50-1](https://github.com/KangGyeongHo/HYU_AI-X-_DL_G03/assets/168617928/6bd2b889-8a95-4664-bd09-9eabf84cc095)
+
 Conv 층을 통과한 F(X) 과 Conv 층을 통과하지 않은 X를 더하는 과정을 Residual Mapping이라고 한다. 위 Residual Block이 여러 개 쌓여서 나온 CNN 모델을 Residual Network(ResNet)이라고 부른다. 모델명에 붙은 숫자는 층의 개수를 의미한다. 즉, ResNet18은 18개의 층이 있다는 소리이고 ResNet50은 50개의 층이 있다는 의미이다. 다른 CNN 종류인 AlexNet이나 GoogLeNet이 가지고 있는 문제점은 바로 층이 깊어짐에 따라 발생하는 과적합과 기울기 소멸 문제이다. 연산 중에 의미 없는 파라미터의 수가 발생하면 연쇄적으로 다음 층에 영향을 미치기 때문에 이를 해결할 방법을 강구해야만 했다. ResNet은 잔차 연결(Skip Connection)을 사용하는 Residual Block을 제안하면서 층이 깊어짐에 따른 과적합이나 기울기 소멸 문제를 해결해버렸다.
 ImageNet 데이터에 맞춰진 ResNet은 7 X 7 필터를 사용하는 합성곱과 3 X 3 Max Pooling을 사용한다. ResNet50은 아래의 표에서 50-layer부분에 해당한다.
+
 ![ResNet50-2](https://github.com/KangGyeongHo/HYU_AI-X-_DL_G03/assets/168617928/956ed96a-5207-4bdb-84b1-b0eff37b2e7e)
+
 이러한 층 방식을 통해 학습시키고, 마지막에 테스트를 걸쳐 모델을 평가할 수 있다.
     Explaining features (if any)
 이번 프로젝트에서 사용할 데이터셋은 캐글에서 찾은 AI 생성 과일과 실제 과일 이미지 데이터셋이다. 이 데이터셋은 총 306개의 파일로 구성되어 있으며, AI 생성 사과와 실제 사과 이미지를 포함한다. 데이터셋은 녹색 사과와 빨간 사과로 나뉘며, 각 카테고리는 오버헤드 샷과 측면 샷으로 세분화되어 있다. 구체적으로, AI 생성 녹색 사과와 빨간 사과 각각 75개씩, 실제 녹색 사과 77개와 빨간 사과 79개로 구성되어 있다.
@@ -91,10 +95,14 @@ Epochs 25 train loss 0.03986351143141262 val 1.0 val loss 0.040438818354760445 a
 weighted avg       1.00      1.00      1.00        31
 ```
 ResNet50 모델의 학습 및 검증 결과를 보면, 학습 정확도와 검증 정확도가 매우 높은 수준을 유지하고 있다. 이는 모델이 데이터셋을 잘 학습했음을 의미한다.
+
 ![Figure_1](https://github.com/KangGyeongHo/HYU_AI-X-_DL_G03/assets/168617928/e47d0002-623f-463a-becb-1590db9fdd6e)
+
 ![Figure_3](https://github.com/KangGyeongHo/HYU_AI-X-_DL_G03/assets/168617928/dc69c90a-c201-489a-ab42-7e09258b72b1)
+
 아래 이미지는 모델이 예측한 결과를 보여준다. 각 이미지 위에는 모델이 예측한 라벨과 실제 라벨이 표시되어 있으며, 예측된 라벨과 실제 라벨이 모두 일치하는 것을 확인할 수 있다.
 또한, 혼동 행렬을 통해 모델의 예측이 얼마나 정확한지 시각적으로 확인할 수 있다. 이 모델은 모든 테스트 데이터에 대해 정확한 예측을 보여주고 있다.
+
 ![Figure_2](https://github.com/KangGyeongHo/HYU_AI-X-_DL_G03/assets/168617928/2055329a-b01e-4937-974a-15ac6f409b33)
 
 ## RELATED_WORKS
