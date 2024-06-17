@@ -27,9 +27,11 @@ AI 생성 이미지와 실제 이미지 데이터셋을 이용하여 두가지 �
 
 ## DATASETS
 ### DATASET LINK
-
+캐글에서 찾은 ai생성/실물 사과 이미지 데이터셋을 이용하여 모델을 학습시킨다.
+[Dataset of AI Generated Fruits and Real Fruits](https://www.kaggle.com/datasets/osmankagankurnaz/dataset-of-ai-generated-fruits-and-real-fruits?resource=download)
 
 ### PREPROCESSING
+
 ## METHODOLOGY
     Explaining your choice of algorithms (methods)
     Explaining features (if any)
