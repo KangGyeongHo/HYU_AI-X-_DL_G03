@@ -1,7 +1,7 @@
 # HYU_AI-X_DL_G03
 # TITLE
 ## AI 생성 이미지 분류 모델
-[설명영상 YouTube 링크](https://www.youtube.com/)
+[설명영상 YouTube 링크]([https://www.youtube.com/](https://www.youtube.com/watch?v=vbAybGht8-g))
 ## 목차
 - [MEMBERS](#MEMBERS)
 - [PROPOSAL](#PROPOSAL)
