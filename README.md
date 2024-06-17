@@ -12,7 +12,7 @@
 - [CONCLUSION](#CONCLUSION)
 
 ## PRELIMINARY_RESEARCH
-    여기부터 사전조사 자료 링크와 의견 달아주면 됩니다.
+    
 ### 강경호
 
 [깃허브 서식 쓰는 법](https://docs.github.com/ko/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
@@ -61,7 +61,7 @@ EfficientNet, Xception: 최신 모델을 사용하면 감지 성능이 향상될
 테스트 및 평가: 훈련된 모델을 실제 데이터에 적용하여 성능을 평가합니다. 정확도, 정밀도, 재현율, F1 점수 등을 사용하여 모델의 성능을 측정합니다.
 위의 방법들을 결합하여 AI/ML/DL 기술을 사용한 AI 생성 비디오 감지 시스템을 구축할 수 있습니다. 기술이 발전함에 따라 더 정교하고 정확한 감지 방법이 개발되고 있습니다.
 ```
-**다른 분들이 올려주신 것도 봤는데, 아무래도 AI 이미지 탐지는 무리가 있을 것 같습니다. 차라리 생성형AI 결과물의 퀄리티를 높이는 방법을 시도하거나, 교수님이 올려주신 사이킷런, 캐글, aws 같은 곳에서 모델이나 데이터셋을 먼저 구하고 그걸로 뭘 할 수 있는지 생각해 보는게 나을 것 같다는 생각입니다.**
+
 
 ### 신승민
 
@@ -95,19 +95,13 @@ EfficientNet, Xception: 최신 모델을 사용하면 감지 성능이 향상될
 조성재|데이터사이언스학부|0000000000|3|
 ## PROPOSAL
 ### MOTIVATION
-최근 생성형AI 분야가 급속도로 발전하여 이미지, 딥페이크 영상을 넘어, 아예 AI로 제작된 영상에 대한 소식이 들려오고 있다. 사람도 구분하기 힘든 수준으로 올라온 AI 이미지/영상을 판별해주는 모델을 탐색하고 검증하는 것을 목표로 프로젝트를 시작했다.
+최근 생성형AI 분야가 급속도로 발전하여 이미지, 딥페이크 영상을 넘어, 아예 AI로 제작된 영상에 대한 소식이 들려오고 있다. 사람도 구분하기 힘든 수준으로 올라온 AI 이미지를 판별해주는 모델을 탐색하고 검증하는 것을 목표로 프로젝트를 시작했다.
 ### GOAL
-생성형 AI에 대한 사전 지식이 깊지 않은 상태로 시작한 점과, 가장 최신의 사안인 점을 감안하여 
-5월 28일 전까지 생성형 AI에 대해 각자 공부해보고, 
-이 팀의 수준에서 할 수 있는 작업인지 확인하는 것을 우선 목표로 한다.
-5월 28일 13시 이전까지 주제를 확정하는 것으로 한다.
+
 
 ## DATASETS
 ### DATASET LINK
 
-[FaceForensics: A Large-scale Video Dataset for Forgery Detection in Human Faces](https://arxiv.org/abs/1803.09179)
-
-[FakeAVCeleb: A Novel Audio-Video Multimodal Deepfake Dataset](https://arxiv.org/abs/2108.05080)
 
 ### PREPROCESSING
 ## METHODOLOGY
